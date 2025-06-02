@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'OCR A';
+  src: local('OCR A Extended'), local('OCR A Std'), local('OCR A');
+}
+
+body, html {
+  margin: 0;
+  height: 100%;
+  background-color: black;
+  color: #00ff00;
+  font-family: 'OCR A', 'Courier New', monospace;
+  font-size: 13px;
+  overflow: hidden;
+}
+
+#terminal {
+  padding: 20px;
+  white-space: pre-wrap;
+  user-select: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#output {
+  line-height: 1.3;
+}
+
+#final-screen {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#final-image {
+  max-width: 80vw;
+  max-height: 80vh;
+  user-select: none;
+  pointer-events: none;
+  display: block;
+  margin: 0 auto;
+}
+
+#final-text {
+  margin-top: 20px;
+  color: #00ff00;
+  font-size: 13px;
+  font-family: 'OCR A', 'Courier New', monospace;
+  white-space: pre-wrap;
+}
